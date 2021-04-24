@@ -17,12 +17,6 @@ class Snow{
         if(this.body.position.y > 730){
             var pos= this.body.position;
             World.remove(world, this.body);
-            push();
-            tint(255, this.Visibility);
-            this.Visibility = this.Visibility - 50;
-            imageMode(CENTER);
-            image(this.image, pos.x,pos.y,50, 50);
-            pop(); 
         }
         else{
          var pos= this.body.position;
